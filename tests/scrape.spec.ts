@@ -30,7 +30,7 @@ const sites = [
 ];
 
 test.describe("Visit sites", () => {
-  test("Go to sites", async ({ page }) => {
+  test("Go to sites", async () => {
     for (let site of sites) {
       await page.goto(site);
       await page.pause();
